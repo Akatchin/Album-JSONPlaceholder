@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+}
+
+.album {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.albums {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}

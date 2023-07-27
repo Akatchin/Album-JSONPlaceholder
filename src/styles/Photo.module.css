@@ -1,0 +1,42 @@
+.album {
+    padding: 10px 25px 10px 25px;
+}
+
+
+.title {
+    display: flex;
+    font-size: 16px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-shadow: inset 0 0 20px 0 salmon;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border: 10px black solid;
+    background-color: black;
+}
+
+.photo:hover {
+    transition: .5s;
+    cursor: pointer;
+    width: 210px;
+    height: 210px;
+}
+
+.img:hover {
+    transition: .5s;
+    width: 210px;
+    height: 210px;
+    opacity: 0.8;
+}
