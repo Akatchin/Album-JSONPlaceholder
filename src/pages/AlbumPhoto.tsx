@@ -2,6 +2,7 @@ import { api } from "../api"
 import { useEffect, useState } from "react"
 import { useParams, Link } from "react-router-dom"
 import styles from "../styles/Photo.module.css"
+import { BackButton } from "../button/BackButton"
 
 
 export const AlbumPhoto = () => {
@@ -26,6 +27,8 @@ api.getPhoto(id)
 }, [id])
 
     return (
+        <div>
+            <BackButton/>
         <div className={styles.container}>
             {imgUrl.map((obj: Props) => {
                 Object.keys(obj)
@@ -42,6 +45,7 @@ api.getPhoto(id)
                     </>
                 )
             })}
+        </div>
         </div>
     )
 }

@@ -12,17 +12,17 @@ export const api = {
     return req.data
  },
 
- getAlbums: async(id:string | undefined) => {
+ getAlbums: async(id:string | void) => {
     const req = await request(`/albums/${id}`);
     return req.data
  },
 
- getPhoto: async(id:string | undefined) => {
+ getPhoto: async(id:string | void) => {
     const req = await request(`/albums/${id}/photos`);
     return req.data
  },
 
- getPhotoAlbum: async(id: string | undefined) => {
+ getPhotoAlbum: async(id: string | void) => {
     const req = await request(`/photos/${id}`)
     return req.data
  }

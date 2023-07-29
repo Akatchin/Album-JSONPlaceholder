@@ -1,3 +1,7 @@
+#root {
+    background-color: aqua;
+}
+
 .album {
     padding: 10px 25px 10px 25px;
 }
@@ -25,6 +29,7 @@
     margin-top: 20px;
     border: 10px black solid;
     background-color: black;
+    box-shadow: 10px 10px 5px rgb(22, 15, 15);
 }
 
 .photo:hover {
