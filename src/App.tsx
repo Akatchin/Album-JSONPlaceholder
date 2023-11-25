@@ -11,7 +11,6 @@ function App () {
                 <Album/>
                 <Outlet/>
             </div>
-            <Footer/>
         </div>
     )
 }
