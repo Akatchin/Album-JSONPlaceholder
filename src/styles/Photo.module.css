@@ -13,8 +13,8 @@
     height: 75px;
     align-items: center;
     justify-content: center;
-    border: 5px solid black;
-    box-shadow: inset 0 0 20px 0 salmon;
+    background: rgb(156, 155, 155);
+    border: 5px solid rgb(146, 143, 143);
 }
 
 .container {

@@ -1,5 +1,8 @@
-.title {
-    text-align: center;
+.flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .album {
@@ -7,14 +10,31 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 30px;
+    width: 100vh;
+    border: solid rgba(15,198,235,1) 20px;
+    border-radius: 50px;
 }
 
 .albums {
-    width: 50%;
-    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(15,198,235,1);
+    padding: 3px;
 }
 
 .link {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: black;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.albums:hover {
+    transition: 0.1s;
+    background-color: lightblue;
 }

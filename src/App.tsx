@@ -1,14 +1,18 @@
+import "./App.css"
+import { Album } from "./pages/Albums/Album"
 import { Outlet } from "react-router-dom"
-import styles from "./styles/Album.module.css"
-import { BackButton } from "./button/BackButton"
+import { Footer } from "./pages/footer/Footer"
 
 function App () {
 
-    return (
-       <div>
-            <h1 className={styles.title}>Galeria de fotos</h1>
-            <Outlet/>
-       </div>
+    return (    
+       <div className="body">
+            <div className="flex-container"> 
+                <Album/>
+                <Outlet/>
+            </div>
+            <Footer/>
+        </div>
     )
 }
 

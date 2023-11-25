@@ -1,0 +1,35 @@
+.footer_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,198,235,1) 0%, rgba(43,164,190,1) 63%, rgba(43,164,190,1) 63%);
+  }
+  
+  .footer_credits {
+    color: white;
+  }
+  
+  .developer_name{
+    color: darkblue;
+    font-weight: bold;
+  }
+
+  .heart {
+    color: red;
+  }
+
+  .footer_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  .a{
+    text-decoration: none;
+    color: white;
+    margin: 3px 10px;
+  }
+
