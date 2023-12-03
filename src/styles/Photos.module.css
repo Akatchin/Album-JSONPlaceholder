@@ -1,0 +1,53 @@
+#root {
+    background-color: aqua;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 75px;
+    background: rgb(156, 155, 155);
+    border: 5px solid rgb(146, 143, 143);
+}
+
+.titleText {
+    margin: 0; 
+    font-size: 16px;
+    text-align: center;
+}
+
+.backButton {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: center;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+
+}
+
+.img:hover {
+    transition: .5s;
+    opacity: 0.8;
+}

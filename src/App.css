@@ -2,9 +2,9 @@ h1 {
   margin: 0px;
 }
 
-.title {
+.header {
   text-align: center;
-  height: 40vh;
+  height: 45vh;
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,198,235,1) 0%, rgba(43,164,190,1) 63%, rgba(43,164,190,1) 63%);
 }
 

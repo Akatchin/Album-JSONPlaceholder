@@ -1,6 +1,9 @@
-import { api } from "../api"
+import { api } from "../../api"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
+import styled from "../../styles/Photo.module.css"
+import { Footer } from "../footer/Footer"
+import { BackButton } from "../../button/BackButton"
 
 export const Photo = () => {
 
@@ -21,13 +24,17 @@ export const Photo = () => {
         })
     },[])
     return (
-        <>
-            <div>
+        <div className={styled.photo_Container}>
+            <div className={styled.backButton}>
+            <BackButton />
+            </div>
+            <div className={styled.title}>
                 <p>{title}</p>
             </div>
-            <div>
-                <img src={photo} alt="" width="600px" height="600px"/>
+            <div className={styled.photo}>
+                <img className={styled.image} src={photo} alt="" width="400px" height="400px"/> 
             </div>
-        </>
+            <Footer/>
+        </div>
     )
 }

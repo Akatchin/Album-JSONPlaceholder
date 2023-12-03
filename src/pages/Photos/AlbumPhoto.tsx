@@ -1,8 +1,9 @@
-import { api } from "../api"
+import { api } from "../../api"
 import { useEffect, useState } from "react"
 import { useParams, Link } from "react-router-dom"
-import styles from "../styles/Photo.module.css"
-import { BackButton } from "../button/BackButton"
+import styled from "../../styles/Photos.module.css"
+import { BackButton } from "../../button/BackButton"
+import { Footer } from "../footer/Footer"
 
 
 export const AlbumPhoto = () => {
@@ -28,24 +29,25 @@ export const AlbumPhoto = () => {
 
     return (
         <div>
+            <div className={styled.backButton}>
             <BackButton />
-            <div className={styles.container}>
+            </div>
+            <div className={styled.container}>
                 {imgUrl.map((obj: Props) => {
                     Object.keys(obj)
                     return (
-                        <>
-                            <div className={styles.album}>
-                                <div className={styles.title}>
-                                    <p>{obj.title}</p>
+                            <div className={styled.album}>
+                                <div className={styled.title}>
+                                    <p className={styled.titleText}>{obj.title}</p>
                                 </div>
-                                <div className={styles.photo} >
-                                    <Link to={`/photos/${id}`}><img className={styles.img} src={obj.thumbnailUrl} alt="" width="200px" height="200px" /></Link>
+                                <div className={styled.photo} >
+                                    <Link to={`/photos/${id}`}><img className={styled.img} src={obj.thumbnailUrl} alt="" width="200px" height="200px" /></Link>
                                 </div>
                             </div>
-                        </>
                     )
                 })}
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -1,47 +1,29 @@
-#root {
-    background-color: aqua;
-}
-
-.album {
-    padding: 10px 25px 10px 25px;
-}
-
-
-.title {
+.photo_Container {
     display: flex;
-    font-size: 16px;
-    height: 75px;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background: rgb(156, 155, 155);
-    border: 5px solid rgb(146, 143, 143);
+    align-items: center;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+.title{
     text-align: center;
+    margin: 20px 0 20px 0px;
+    width: 400px;
+    background-color: rgb(156, 155, 155);
+    border: 10px solid rgb(95, 94, 94);
+    border-radius: 20px;
+}
+
+.backButton {
+    margin: 20px;
 }
 
 .photo {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    border: 10px black solid;
-    background-color: black;
-    box-shadow: 10px 10px 5px rgb(22, 15, 15);
+    margin-bottom: 20px;
+
 }
 
-.photo:hover {
-    transition: .5s;
-    cursor: pointer;
-    width: 210px;
-    height: 210px;
-}
-
-.img:hover {
-    transition: .5s;
-    width: 210px;
-    height: 210px;
-    opacity: 0.8;
+.image {
+ border: 10px solid black;
+ border-radius: 10px;
 }

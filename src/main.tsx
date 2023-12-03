@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { AlbumPhoto } from "./pages/AlbumPhoto"
+import { AlbumPhoto } from "./pages/Photos/AlbumPhoto"
 import { Album } from './pages/Albums/Album'
 import { Album2 } from './pages/Albums/Album2'
 import { Album3 } from './pages/Albums/Album3'
 import { Album4 } from './pages/Albums/Album4'
 import { Album5 } from './pages/Albums/Album5'
-import ErrorPage from "./pages/ErrorPage"
-import { Photo } from './pages/Photo'
+import ErrorPage from "./pages/error/ErrorPage"
+import { Photo } from './pages/Photo/Photo'
 import Camera from "./assets/camera-_svg.svg"
 import "./index.css"
 
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
  
   <React.StrictMode> 
-    <div className='title'>
+    <div className='header'>
         <h1 >Galeria de fotos</h1>
         <img src={Camera} alt="Imagem de uma câmera" width="300px" height="200px"/>
     </div>
