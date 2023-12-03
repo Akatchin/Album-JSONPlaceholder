@@ -8,3 +8,23 @@ h1 {
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,198,235,1) 0%, rgba(43,164,190,1) 63%, rgba(43,164,190,1) 63%);
 }
 
+.headerMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuOption {
+  width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.imageDiv {
+  width: 40%;
+}

@@ -9,7 +9,7 @@ const request =
 export const api = {
  getAlbum: async() => {
     const req = await request("/albums");
-    return req.data
+      return req.data
  },
 
  getAlbums: async(id:string | void) => {
