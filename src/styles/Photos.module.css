@@ -51,3 +51,14 @@
     transition: .5s;
     opacity: 0.8;
 }
+
+.loadingDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
