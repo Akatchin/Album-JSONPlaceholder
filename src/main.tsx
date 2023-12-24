@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { Link } from 'react-router-dom'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { AlbumPhoto } from "./pages/Photos/AlbumPhoto"
 import { Album } from './pages/Albums/Album'
