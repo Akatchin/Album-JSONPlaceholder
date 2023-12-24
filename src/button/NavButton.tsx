@@ -7,10 +7,6 @@ export const NavButton = () => {
 
   const navigate = useNavigate()
 
-  const backButton = () => {
-    navigate(-1)
-}
-
   return (
     <div className={styles.navButton}>
       <BackButton/>
