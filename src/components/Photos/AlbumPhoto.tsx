@@ -1,5 +1,5 @@
 import { api } from "../../api"
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useState } from "react"
 import { useParams, Link } from "react-router-dom"
 import styled from "../styles/Photos.module.css"
 import { BackButton } from "../button/BackButton"
