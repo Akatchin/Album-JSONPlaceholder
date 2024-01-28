@@ -1,5 +1,5 @@
-import "./App.css"
-import { Album } from "./pages/Albums/Album"
+import "./index.css"
+import { Album } from "./components/Albums/Album"
 import { Outlet } from "react-router-dom"
 
 function App () {

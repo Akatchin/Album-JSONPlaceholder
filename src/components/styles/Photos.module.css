@@ -1,0 +1,102 @@
+#root {
+    background-color: aqua;
+}
+
+.gallery_wrapper {
+    overflow-x: hidden;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.arrow_left,
+.arrow_right {  
+    position: absolute;
+    height: 250px;
+    left: 0;
+    right: auto;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow_right {  
+    left: auto;
+    right: 0;
+    border: none;
+    background: linear-gradient(to right, transparent 0%, black 200%)
+}
+
+.arrow_left:hover {
+    opacity: 1;
+}
+.arrow_right:hover {
+    opacity: 1; 
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 75px;
+    background: rgb(156, 155, 155);
+    border: 5px solid rgb(146, 143, 143);
+}
+
+.titleText {
+    margin: 0; 
+    font-size: 16px;
+    text-align: center;
+}
+
+.backButton {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+    height: 400px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+.loading {
+    margin-top: 60px;
+    background-color: none;
+}
+
+
+.loadingDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -1,4 +1,4 @@
-import styled from "../../styles/Footer.module.css"
+import styled from "../styles/Footer.module.css"
 import { FaInstagram, FaGithubAlt, FaLinkedin, FaRegCopyright, FaHeart } from "react-icons/fa";
 
 export const Footer = () => {

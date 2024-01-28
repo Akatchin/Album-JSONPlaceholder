@@ -2,12 +2,21 @@
 
 :root {
   font-family: 'Anton', sans-serif;
-
 }
 
 body {
   margin: 0px;
   background-color: rgb(209, 203, 201 );
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  width: 16px;
+  height: 16px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(43,164,190,1);
 }
 
 .flex-container {
@@ -15,4 +24,35 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.header {
+  text-align: center;
+  height: 45vh;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,198,235,1) 0%, rgba(43,164,190,1) 63%, rgba(43,164,190,1) 63%);
+}
+
+.headerMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuOption {
+  width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.imageDiv {
+  width: 40%;
 }
