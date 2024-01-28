@@ -75,7 +75,6 @@ export const AlbumPhoto = () => {
                     <button onClick={(()=> controlButton(0))} className={styled.arrow_left} aria-aria-label="Previous image">🠸</button>
                     <button onClick={()=> controlButton(1)} className={styled.arrow_right} aria-aria-label="Next image">🠺</button>
                     <div className={styled.gallery_wrapper}>
-
                         <div className={styled.gallery}>
                             {imgUrl.map((obj: Props) => {
                                 return (
